@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import Container from "@/components/ui/Container";
 import { NAV_LINKS } from "@/lib/constants";
 
@@ -33,8 +34,8 @@ export default function Nav() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border/60 bg-bg/70 backdrop-blur-md">
       <Container className="flex h-16 items-center justify-between">
-        <a href="#top" className="font-display text-lg font-semibold">
-          Site<span className="text-gradient">Craft</span>
+        <a href="#top" className="flex items-center">
+          <Image src="/logo.png" alt="SiteCraft Logo" width={140} height={40} className="h-10 w-auto object-contain mix-blend-multiply" priority />
         </a>
 
         <nav className="hidden gap-8 md:flex">

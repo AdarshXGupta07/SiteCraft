@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: "SiteCraft — Websites, built for your business",
   description:
     "SiteCraft designs and builds fast, modern websites for restaurants, schools, hotels, clinics, and personal brands.",
+  icons: {
+    icon: "/icon.png",
+  }
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
